@@ -20,17 +20,14 @@ Future<void> uploadToAzureBlob(File imageFile, String BlobName) async {
   }
 }
 
-Future<void> uploadUserData(Map<String, String> userDetails) async {
+Future<void> uploadUserData(
+    Map<String, dynamic>? userDetails, String blobName) async {
   // Convert user details map to JSON string
   String jsonData = json.encode(userDetails);
 
   try {
     // Create an instance of Azure Storage Blob
     final storage = AzureStorage.parse(connectionString);
-
-    // Define the blob name (using a timestamp or user identifier)
-    String blobName = "user-${DateTime.now().millisecondsSinceEpoch}.json";
-
     // Upload the data to Azure Blob Storage in the 'user-details' container
     await storage.putBlob(
       'user-details/$blobName', // container name

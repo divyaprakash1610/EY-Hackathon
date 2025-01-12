@@ -1,8 +1,15 @@
-import 'package:ey_hackathon/Document%20verification/ocr_page.dart';
+import 'package:ey_hackathon/Document%20verification/pages/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'userProvider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => UserDetailsProvider(), // Provide UserDetailsProvider
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -18,7 +25,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: OcrPage(),
+      home: HomeScreen(),
     );
   }
 }

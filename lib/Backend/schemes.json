@@ -1,0 +1,44 @@
+{
+    "schemes": [
+      {
+        "scheme_id": "1",
+        "name": "Healthcare Subsidy Scheme",
+        "description": "A scheme providing financial assistance for healthcare expenses.",
+        "benefits": "Covers up to 50% of healthcare costs.",
+        "application_link": "http://example.com/apply/healthcare-subsidy",
+        "deadline": "2025-12-31",
+        "eligibility_criteria": {
+                    "gender": "Female"
+        }
+      },
+      {
+        "scheme_id": "2",
+        "name": "Education Assistance Scheme",
+        "description": "Provides scholarships and education grants for underprivileged students.",
+        "benefits": "Full tuition fee coverage for selected students.",
+        "application_link": "http://example.com/apply/education-assistance",
+        "deadline": "2025-09-30",
+        "eligibility_criteria": {
+          "min_age": 18,
+          "max_age": 25,
+          "eligible_states": ["Tamil Nadu", "Kerela"],
+          "gender": "Female"
+        }
+      },
+      {
+        "scheme_id": "3",
+        "name": "Agricultural Loan Scheme",
+        "description": "A loan scheme aimed at helping farmers with agricultural development.",
+        "benefits": "Up to 1 lakh loan at low-interest rates.",
+        "application_link": "http://example.com/apply/agricultural-loan",
+        "deadline": "2025-06-30",
+        "eligibility_criteria": {
+          "min_age": 27,
+          "max_age": 60,
+          "eligible_states": ["Tamil Nadu"],
+          "gender": "Female"
+        }
+      }
+    ]
+  }
+  
